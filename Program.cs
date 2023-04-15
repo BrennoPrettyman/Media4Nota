@@ -57,14 +57,14 @@ class Program
             double media;
             media = total / 4;
 
-            if (media > 5)
+            if (media < 5)
             {
                 Console.ForegroundColor = ConsoleColor.DarkRed;
                 Situação = "Reprovado";
                 Console.ResetColor();
             }
 
-            else if (media > 6)
+            else if (media < 6)
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Situação = "Recuperação";
